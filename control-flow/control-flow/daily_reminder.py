@@ -1,19 +1,9 @@
-task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ").lower()
-time_bound = input("Is it time-bound? (yes/no): ").lower()
-
-match priority:
-    case "high" if time_bound == "yes":
-        print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
-    case "high":
-        print(f"Reminder: '{task}' is a high priority task. Try to address it soon.")
-    case "medium" if time_bound == "yes":
-        print(f"Reminder: '{task}' is a medium priority task that should be handled today.")
-    case "medium":
-        print(f"Reminder: '{task}' is a medium priority task. Plan for it.")
-    case "low" if time_bound == "yes":
-        print(f"Reminder: '{task}' is a low priority task that still requires attention today.")
-    case "low":
-        print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
-    case _:
-        print("Invalid priority level entered.")
+weather = input("what's the weather like today? (sunny/rainy/cold): ")
+if weather == "sunny":
+    print("Wear a t-shirt and sunglasses.")
+elif weather == "rainy":
+    print("Don't forget your umbrella and a raincoat.")
+elif weather == "cold":
+    print("Make sure you wear a warm coat and a scarf.")
+else:
+    print("Sorry, I don't have recommendations for this weather.")        
